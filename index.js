@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
-const PORT = process.env.X_ZOHO_CATALYST_LISTEN_PORT || 9000;
+const PORT = process.env.PORT || 9000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
